@@ -25,4 +25,23 @@ class App extends Component {
   }
 }
 
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      myApiData: []
+    };
+  }
+
+  componentDidMount() {
+    fetch('https://example.api.com')
+    .then(response => response.json())
+    .then(data => this.setState({myApiData: data});
+  }
+
+  render() {
+    // rendering stuff here
+  }
+}
+
 export default App;
