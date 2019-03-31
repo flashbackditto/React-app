@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 
@@ -18,18 +18,26 @@ class MyComponent extends React.Component {
     .then((response) => {
       return response.json()
     })
+
     .then((responseData) => {
       this.setState({myApiData: responseData}, () =>
-      console.log(this.state.data));
-  });
-    console.log(this.state.data);
+      console.log(responseData)); // this is now calling the API and console logging effectively
+  })
+
   }
 
   render() {
+    const {myApiData} = this.state;
     return (
       <div>
-      <h1>Random Swanson Quote</h1>
+         <h2>
+            {myApiData} - Ron Swanson
+         </h2>
       </div>
+
+      // <div>
+      //   <h1>Random Swanson Quote</h1>
+      // </div>
     );
   }
 };
