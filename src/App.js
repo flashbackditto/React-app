@@ -1,29 +1,7 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -34,14 +12,31 @@ class MyComponent extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://example.api.com')
-    .then(response => response.json())
-    .then(data => this.setState({myApiData: data});
+    fetch('http://ron-swanson-quotes.herokuapp.com/v2/quotes', {
+      method: 'GET'
+    })
+    .then((response) => {
+      return response.json()
+    })
+    .then((responseData) => {
+      this.setState({myApiData: responseData}, () =>
+      console.log(this.state.data));
+  });
+    console.log(this.state.data);
   }
 
   render() {
-    // rendering stuff here
+    return (
+      <div>
+      <h1>Random Swanson Quote</h1>
+      </div>
+    );
   }
-}
+};
 
-export default App;
+export default MyComponent;
+
+// My code seems v close, but I'm making a mistake in the fetch api call and it's returning undefined.
+
+// It would appear that the fetch api method doesn't work exactly the same in React JS compared
+// to vanilla OG classic JS
