@@ -12,3 +12,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.quote {
+  font-size: 200%;
+  text-transform: capitalize;
+  background: black;
+  color: white;
+}
