@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-
+import ToDos from './components/ToDos';
 
 
 class MyComponent extends React.Component {
@@ -29,15 +29,13 @@ class MyComponent extends React.Component {
   render() {
     const {myApiData} = this.state;
     return (
-      <div>
-         <h2>
-            {myApiData} - Ron Swanson
-         </h2>
-      </div>
+      <div class = "quote">
+         <ToDos />
+         <h1>
+            {myApiData + " - Ron Swanson"}
+         </h1>
 
-      // <div>
-      //   <h1>Random Swanson Quote</h1>
-      // </div>
+      </div>
     );
   }
 };
