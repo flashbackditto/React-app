@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import ToDos from './components/ToDos';
 import Headers from './components/Headers';
+import Button from './components/Button';
 
 
 class MyComponent extends React.Component {
@@ -36,7 +37,8 @@ class MyComponent extends React.Component {
          <h1>
             {myApiData + " - Ron Swanson"}
          </h1>
-
+         <Button />
+         <Button />
       </div>
     );
   }
