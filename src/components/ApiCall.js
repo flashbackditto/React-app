@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
-import ToDos from './components/ToDos';
-import Headers from './components/Headers';
+import ApiCall from './components/ApiCa';
 
 
-class MyComponent extends React.Component {
+class ApiCall extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,7 +30,6 @@ class MyComponent extends React.Component {
     const {myApiData} = this.state;
     return (
       <div class = "quote">
-         <Headers />
          <ToDos />
          <h1>
             {myApiData + " - Ron Swanson"}
@@ -43,8 +41,3 @@ class MyComponent extends React.Component {
 };
 
 export default MyComponent;
-
-// My code seems v close, but I'm making a mistake in the fetch api call and it's returning undefined.
-
-// It would appear that the fetch api method doesn't work exactly the same in React JS compared
-// to vanilla OG classic JS
