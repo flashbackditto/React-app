@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
-import ApiCall from './components/ApiCa';
-
 
 class ApiCall extends React.Component {
   constructor(props) {
@@ -30,7 +27,7 @@ class ApiCall extends React.Component {
     const {myApiData} = this.state;
     return (
       <div class = "quote">
-         <ToDos />
+
          <h1>
             {myApiData + " - Ron Swanson"}
          </h1>
@@ -40,4 +37,4 @@ class ApiCall extends React.Component {
   }
 };
 
-export default MyComponent;
+export default ApiCall;

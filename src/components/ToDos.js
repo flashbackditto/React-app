@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 
-
-
-
 class Todos extends React.Component {
 
   render() {

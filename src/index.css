@@ -1,6 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.4;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -13,9 +20,8 @@ code {
     monospace;
 }
 
-.quote {
-  font-size: 200%;
-  text-transform: capitalize;
+.app{
+
   background: black;
   color: white;
 }
