@@ -15,7 +15,7 @@ class Star extends Component {
   render() {
     return (
       <div class="rating">
-        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        <input name="myrating" type="radio" value="5" /><span>☆</span><input name="myrating" type="radio" value="4" /><span>☆</span><input name="myrating" type="radio" value="3" /><span>☆</span><input name="myrating" type="radio" value="2" /><span>☆</span><input name="myrating" type="radio" value="1" /><span>☆</span>
       </div>
     );
   }
