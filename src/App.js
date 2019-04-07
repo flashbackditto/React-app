@@ -4,6 +4,7 @@ import ToDos from './components/ToDos';
 import Headers from './components/Headers';
 import Button from './components/Button';
 import ApiCall from './components/ApiCall';
+import Star from './components/Star';
 
 class MyComponent extends React.Component {
 
@@ -13,9 +14,7 @@ class MyComponent extends React.Component {
       <div class = "app">
          <Headers />
          <ApiCall />
-         <ToDos />
-         <Button />
-         <Button />
+         <Star />
       </div>
     );
   }

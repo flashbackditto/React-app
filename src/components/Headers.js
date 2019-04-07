@@ -5,9 +5,9 @@ class Headers extends React.Component {
   render() {
     return (
       <div>
-         <h3>
-            Headers Say Bold Things!
-         </h3>
+         <h2>
+            Rate A Swason Quote:
+         </h2>
       </div>
     );
   }
