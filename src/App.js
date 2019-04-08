@@ -15,6 +15,7 @@ class MyComponent extends React.Component {
          <Headers />
          <ApiCall />
          <Star />
+         <Button />
       </div>
     );
   }
